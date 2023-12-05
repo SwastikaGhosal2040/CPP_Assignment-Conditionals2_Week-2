@@ -1,0 +1,23 @@
+Predict the output:
+#include<iostream>
+using namespace std;
+int main() {
+int x = 3 ;
+float y = 3.0 ;
+if (x == y)
+cout <<"x and y are equal" ;
+else
+cout << "x and y are not equal" ;
+return 0;
+}
+
+The output will be "x and y are equal."
+
+ This is because the if statement is checking for equality between x and y,
+  and in this case, even though one is an integer and the other is a float, 
+  their values are the same (3), so the condition is true.
+
+
+
+
+

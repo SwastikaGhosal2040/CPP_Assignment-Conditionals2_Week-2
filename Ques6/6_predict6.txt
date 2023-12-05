@@ -1,0 +1,41 @@
+predict the output:
+
+#include <iostream>
+using namespace std;
+int main() {
+int number = -4;
+char result;
+result = number > 0 ? 'P' : 'N';
+cout << result << endl;
+return 0;
+}
+
+Explanation:
+
+The first line of the code includes the iostream header file, 
+which is necessary for performing input and output operations.
+
+The using namespace std; statement brings the entire std 
+namespace into scope, so that we don't have to prefix every 
+standard library identifier with std::.
+
+The main() function is the entry point of the program.
+
+int number = -4; 
+-4 value is stored inside the int number 
+
+char result;
+a variable named result of character data type occupies 1 byte 
+space in the memory. 
+
+result = number > 0 ? 'P' : 'N';
+number > 0 ? 'P' : 'N' this will be executed first.
+statement is false as number = -4
+so, inside result N is stored.
+
+cout << result << endl;
+N is printed 
+endl gives one new line.
+
+Output:
+N

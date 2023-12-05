@@ -1,0 +1,35 @@
+predict the output:
+#include <iostream>
+using namespace std;
+int main(){
+int a = 18; int b = 12;
+bool t = (a > 20 && b < 15)? true : false;
+cout <<"Value of t: " << t ;
+return 0;
+}
+
+Explanation:
+
+The first line of the code includes the iostream header file, 
+which is necessary for performing input and output operations.
+
+The using namespace std; statement brings the entire std 
+namespace into scope, so that we don't have to prefix every 
+standard library identifier with std::.
+
+The main() function is the entry point of the program.
+
+int a = 18; int b = 12;
+The value 18 is stored inside int a and 
+The value 12 is stored inside int b.
+
+bool t = (a > 20 && b < 15)? true : false;
+(a > 20 && b < 15)? true : false; this will be executed 1st.
+a>20 is false so, it returns false
+bool t = false = 0
+
+cout <<"Value of t: " << t ;
+Value of t: 0
+ 
+Output :
+Value of t: 0

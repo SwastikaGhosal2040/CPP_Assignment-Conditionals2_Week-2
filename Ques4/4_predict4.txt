@@ -1,0 +1,45 @@
+//predict the output:
+
+#include<iostream>
+using namespace std;
+int main(){
+int test = 0;
+cout << "First character " << '1' << endl;
+cout << "Second character " << (test ? 3 : '1') << endl;
+return 0;
+}
+
+Explanation:
+
+The first line of the code includes the iostream header file, 
+which is necessary for performing input and output operations.
+
+The using namespace std; statement brings the entire std 
+namespace into scope, so that we don't have to prefix every 
+standard library identifier with std::.
+
+The main() function is the entry point of the program.
+
+The int test = 0; statement declares an integer variable named 
+test and initializes it to 0.
+'test' is the name of the variable and it is of int data type
+which can store only int type of value.
+
+cout << "First character " << '1' << endl;
+This line will print:
+First character 1
+endl prints a new line.
+
+cout << "Second character " << (test ? 3 : '1') << endl;
+Second character is printed and after that the result of 
+(test ? 3 : '1') is printed and after that for endl, a new
+line is printed.
+(test ? 3 : '1') after execution of this statement,
+int test should store char '1' as test!=3, test=0, 
+so fale statement.
+But int test can't store char '1' so it will store the ASCII 
+value of '1' = 49 = int.
+
+output should be:
+First character 1
+Second character 49
